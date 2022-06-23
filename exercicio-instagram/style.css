@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:#FAFAFA;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42%;
+    padding: 0;
+    margin: 0;
+}
+
+.left img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 32%;
+    padding: 0;
+    margin: 0;
+}
+
+.group {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-style: solid;
+    border-color: #EFEFEF;
+    border-width: 2px;
+    border-radius: 2px;
+    width: 340px;
+    margin-bottom: 10px;
+}
+
+.insta {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.profile img {
+    border-style: none;
+    border-radius: 50%;
+    width: 90px;
+}
+
+.continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue a {
+    background-color: #0095F6;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 170px;
+    height: 25px;
+}
+
+.exit {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.exit a{
+    color: #0095F6;
+    font-weight: bold;
+}
+
+.not {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.c-account {
+    display: flex;
+    justify-content: center;
+}
+
+.question {
+    color: #9E9E9E;
+    font-weight: bold;
+}
+
+.choice {
+    color: #9E9E9E;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.choice span {
+    color: #0095F6;
+}
+
+.download{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.download-way  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.get-app{
+    font-weight: bold;
+}
+
+.apple-store{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+}
+
+.play-store{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10.7rem;
+}
+
+/*Criando background responsivo*/
+
+@media (max-width: 1700px){
+    .wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1250px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .group{
+        border: none;
+    }
+}
