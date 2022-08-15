@@ -120,8 +120,11 @@ header div .direita{
     width: 35%;
     margin-left: 0.9%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
 .titulo-destaque{
@@ -140,8 +143,8 @@ header div .direita{
     font-size: 20px;
     font-weight: bold;
     border-radius: 6px;
-    height: 11%;
-    width: 30%;
+    height: 50px;
+    width: 200px;
 }
 
 .mais-info{
