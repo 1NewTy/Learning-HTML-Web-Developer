@@ -1,0 +1,21 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #030029;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body h1{
+    color: lightgray;
+    text-decoration: underline;
+}
+
+body canvas{
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+}

@@ -32,7 +32,7 @@ function createSnake(){
     //Creating the box of the snake in canvas (initially the array length is "1", so we will just color 1 block in for loop, when our i achieves "i=1", we'll move out the loop)
     for(i=0; i < snake.length; i++){
         context.fillStyle = "lightgray";
-        context.fillRect(snake[0].x,snake[0].y,box,box);
+        context.fillRect(snake[i].x,snake[i].y,box,box);
     };
 };
 
@@ -61,6 +61,14 @@ function gameStart(){
     if(snake[0].x < box && direction == "left"){snake[0].x = box*49};
     if(snake[0].y < box && direction == "up"){snake[0].y = box*49};
     if(snake[0].y > box*49 && direction == "down"){snake[0].y = box};
+
+    //Creating the game over condition
+    for(i=1; i < snake.length; i++){
+        if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
+            clearInterval(jogo);
+            alert('game over!');
+        };
+    };
 
     createBG();
     createSnake();
